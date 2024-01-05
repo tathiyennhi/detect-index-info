@@ -1,7 +1,9 @@
 version: '3'
 services:
-  app:
-    build: .
+  market_index:
+    build:
+      context: .
+      dockerfile: Dockerfile.marketIndex
     ports:
       - '6789:6789'
     working_dir: /app
@@ -10,6 +12,16 @@ services:
     depends_on:
       - mongo
       - redis
+
+  market_index_history:
+    build:
+      context: .
+      dockerfile: Dockerfile.marketIndexHistory
+    ports:
+      - '6790:6790'
+    working_dir: /app
+    depends_on:
+      - mongo
 
   redis:
     image: redis

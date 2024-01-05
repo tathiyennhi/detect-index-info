@@ -1,3 +1,4 @@
 const indexHandler = require('./indexHandler');
+const indexHistoryHandler = require('./indexHistoryHandler');
 
-module.exports = { ...indexHandler };
+module.exports = { ...indexHandler, ...indexHistoryHandler };
