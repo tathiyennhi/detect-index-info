@@ -1,0 +1,33 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      // "program": "${workspaceFolder}\\main.js"
+      // "program": "${workspaceFolder}\\main-stx-sto-upx.js"
+      // "program": "${workspaceFolder}\\test/test.js"
+      // "program": "${workspaceFolder}/utils/initSercuritiesCronJob.js",
+      // "program": "${workspaceFolder}\\/src/socket/sto.js",
+      // "program": "${workspaceFolder}\\/src/socket/stx.js",
+      // "program": "${workspaceFolder}\\/src/socket/watchlist.js",
+      "program": "${workspaceFolder}/src/api.js",
+      // "program": "${workspaceFolder}/src/marketIndex.js",
+      // "program": "${workspaceFolder}\\testOrder.js"
+      // "program": "${workspaceFolder}\\test/testOrder.js"
+      // "program": "${workspaceFolder}\\testTimer.js"
+      // "program": "${workspaceFolder}\\test_init_update_share_cw.js"
+      // "program": "${workspaceFolder}\\test/testOrderManagement.js"
+      // "program": "${workspaceFolder}\\test/test_edgePriceCanNotPlaceOrder.js"
+      // "program": "${workspaceFolder}\\test/testChooseBuyOrSellOnly.js"
+      // "program": "${workspaceFolder}\\test/testOracleDb.js"
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal"
+    }
+  ]
+}
